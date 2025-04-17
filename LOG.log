@@ -1,0 +1,12 @@
+2025-03-30 19:22:22 INFO  SuccessAfterFail - Tagname = button
+
+
+
+2025-03-30 19:22:22 INFO  SuccessAfterFail - Html element text = [SIGN IN]
+
+
+2025-03-30 19:22:22 INFO  SuccessAfterFail - failedXpathText element text = [SIGN INnn]
+
+
+2025-03-30 19:22:22 INFO  SuccessAfterFail - Text matched html Element = <button _ngcontent-wci-c157="" type="submit" class="btn btn-primary btn-block login__btn">SIGN IN</button>
+
