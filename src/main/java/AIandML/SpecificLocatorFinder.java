@@ -184,6 +184,7 @@ public class SpecificLocatorFinder {
 
 						String[] classes = className.split("\\s+");
 						for (String cls : classes) {
+							if (cls.trim().isEmpty()) continue; // <-- filter empty class
 							List<Element> elementsWithClass = doc.select("." + cls);
 
 //                            if (elementsWithClass.size() == 1) {
@@ -443,21 +444,7 @@ public class SpecificLocatorFinder {
 
 //        String htmlSnippet = "<button data-component=\"atoms-element-button-1\" data-hook=\"validate-email\" name=\"next\" type=\"button\"><span>Next</span></button>";
 
-		String htmlSnippet = "<div id=\"mainContainer\" class=\"container\">\r\n"
-				+ "    <h1 class=\"header\">Sample HTML Elements</h1>\r\n"
-				+ "    <p id=\"description\" class=\"text\">This is a sample paragraph with various HTML elements.</p>\r\n"
-				+ "    \r\n"
-				+ "    <input type=\"text\" id=\"username\" name=\"username\" class=\"input-field\" placeholder=\"Enter your username\" />\r\n"
-				+ "    <input type=\"password\" id=\"password\" name=\"password\" class=\"input-field\" placeholder=\"Enter your password\" />\r\n"
-				+ "    \r\n"
-				+ "    <button id=\"submitBtn\" class=\"btn\">Submit</button>\r\n"
-				+ "    \r\n"
-				+ "    <div class=\"child\" id=\"child1\">\r\n"
-				+ "        <h2 class=\"child-header\">Child Element 1</h2>\r\n"
-				+ "        <p class=\"child-text\">This is the first child element.</p>\r\n"
-				+ "    </div>\r\n"
-				+ "    \r\n"
-				+ "</div>";
+		String htmlSnippet = "<span>Next</span>";
 		
 		
 		
